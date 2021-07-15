@@ -74,15 +74,6 @@ std::vector<int> countNum(int n, std::vector<int> a, int Q, std::vector<std::vec
     for (int iQue = 0; iQue < Q; iQue++)
     {
         vector<int> elemQuery = query[iQue];
-        //vecPrint(elemQuery);
-        //cout << "\nNew One! " << endl;
-        //int X = elemQuery[0];
-        //cout << "X: " << X << endl;
-        //int L = elemQuery[1] - 1;
-        //cout << "L: " << L << endl;
-        //int R = elemQuery[2] - 1;
-        //cout << "R: " << R << endl;
-        //res.push_back(countX(a,X,L,R));
         res.push_back(countX(a,elemQuery[0],elemQuery[1] - 1,elemQuery[2] - 1));
     }
     
